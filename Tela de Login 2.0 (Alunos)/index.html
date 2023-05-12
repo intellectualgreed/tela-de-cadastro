@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Criar conta</h1>
+
+        <div class="social-media">
+
+            <a href="https://www.google.com/" target="_blank">
+                <img src="assets/google.png" alt="Google">
+            </a>
+
+            <a href="https://www.pt-br.facebook.com/" target="_blank">
+                <img src="assets/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.br.linkedin.com/" target="_blank">
+                <img src="assets/linkedin.png" alt="Linkedin">
+            </a>
+
+        </div>
+
+        <div class="alternative">
+            <span>OU</span>
+        </div>
+
+        <form action="https://api.sheetmonkey.io/form/dz5Rfb24C7yCc3nT1tzMVK" method="post">
+            <label for="name">
+                <span>Nome</span>
+                <input type="text" id="name" name="name">
+            </label>
+
+            <label>
+                <span>Cep:</span>
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);">
+            </label>
+
+            <label>
+                <span>Rua:</span>
+                <input name="rua" type="text" id="rua" size="60">
+            </label>
+
+            <label>
+                <span>Bairro:</span>
+                <input type="text" name="bairro" id="bairro" size="4-">
+            </label>
+
+            <label>
+                <span>Cidade:</span>
+                <input type="text" name="cidade" id="cidade" size="40">
+            </label>
+            
+            <label>
+                <span>Estado:</span>
+                <input type="text" name="uf" id="uf" size="2">
+            </label>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+    </main>
+
+    <section class="images">
+
+        <img src="assets/mobile.svg" alt="Mobile">
+        <div class="circle"></div>
+
+    </section>
+
+    <script src="cep.js"></script>
+
+</body>
+</html>
